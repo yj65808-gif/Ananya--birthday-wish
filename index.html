@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 17th Birthday Ananya! 🎉</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Animated background particles */
+        .particle {
+            position: absolute;
+            pointer-events: none;
+            font-size: 2rem;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 60px 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            animation: slideIn 1s ease-out;
+            z-index: 10;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .balloons {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        h1 {
+            color: #764ba2;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .age {
+            color: #667eea;
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 20px 0;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        .divider {
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+
+        .wish-box {
+            margin: 30px 0;
+            padding: 25px;
+            background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+            border-radius: 15px;
+            color: white;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .wish-text {
+            font-style: italic;
+            font-weight: 300;
+        }
+
+        .special-message {
+            background: rgba(102, 126, 234, 0.1);
+            padding: 20px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+            border-radius: 8px;
+            text-align: left;
+            color: #333;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .special-message p {
+            margin: 10px 0;
+        }
+
+        .emojis {
+            font-size: 2rem;
+            margin: 20px 0;
+            animation: spin 4s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .cake {
+            font-size: 4rem;
+            margin: 20px 0;
+            animation: wobble 1s ease-in-out infinite;
+        }
+
+        @keyframes wobble {
+            0%, 100% {
+                transform: rotate(-1deg);
+            }
+            50% {
+                transform: rotate(1deg);
+            }
+        }
+
+        .footer {
+            margin-top: 30px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .stars {
+            position: absolute;
+            font-size: 1.5rem;
+            opacity: 0.6;
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-weight: bold;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Background particles -->
+    <div class="particle" style="top: 10%; left: 10%;">🎈</div>
+    <div class="particle" style="top: 20%; right: 15%;">✨</div>
+    <div class="particle" style="bottom: 20%; left: 5%;">🎉</div>
+    <div class="particle" style="bottom: 30%; right: 10%;">⭐</div>
+    <div class="particle" style="top: 50%; left: 2%;">🎁</div>
+    <div class="particle" style="top: 60%; right: 5%;">💝</div>
+
+    <div class="container">
+        <div class="balloons">🎈🎈🎈</div>
+        
+        <h1>Happy Birthday</h1>
+        <h1 style="color: #667eea; font-size: 3rem; margin-bottom: 20px;">Ananya! 🎉</h1>
+
+        <div class="age">17</div>
+
+        <div class="divider"></div>
+
+        <div class="cake">🎂</div>
+
+        <div class="wish-box">
+            <p class="wish-text">
+                🌟 May your 17th year be filled with endless joy, amazing adventures, and beautiful moments that take your breath away!
+            </p>
+        </div>
+
+        <div class="special-message">
+            <p><strong>✨ Special Wishes For You:</strong></p>
+            <p>🎯 May you achieve all your dreams and goals</p>
+            <p>💪 May you grow stronger, wiser, and braver</p>
+            <p>💫 May you spread happiness wherever you go</p>
+            <p>🌈 May every day bring new reasons to smile</p>
+            <p>❤️ May you always be surrounded by love and support</p>
+        </div>
+
+        <div class="emojis">🌟💝✨</div>
+
+        <div class="special-message">
+            <p style="text-align: center; font-size: 1.1rem; color: #764ba2; font-weight: bold;">
+                Today is YOUR day! 🌹<br>
+                Enjoy every second of it!
+            </p>
+        </div>
+
+        <button onclick="celebrateBirthday()">🎊 Celebrate! 🎊</button>
+
+        <div class="footer">
+            <p>🎂 Wishing you the happiest of birthdays! 🎂</p>
+            <p>May 17 be your best year yet! 💖</p>
+        </div>
+    </div>
+
+    <script>
+        function celebrateBirthday() {
+            // Create confetti effect
+            for (let i = 0; i < 50; i++) {
+                createConfetti();
+            }
+        }
+
+        function createConfetti() {
+            const confetti = document.createElement('div');
+            confetti.innerHTML = ['🎉', '🎈', '✨', '⭐', '💝', '🎁', '🎊'][Math.floor(Math.random() * 7)];
+            confetti.style.position = 'fixed';
+            confetti.style.left = Math.random() * 100 + '%';
+            confetti.style.top = '-10px';
+            confetti.style.fontSize = (Math.random() * 1.5 + 1) + 'rem';
+            confetti.style.zIndex = 9999;
+            confetti.style.pointerEvents = 'none';
+            confetti.style.animation = `fall ${Math.random() * 3 + 2}s linear`;
+            
+            document.body.appendChild(confetti);
+            
+            setTimeout(() => confetti.remove(), 3500);
+        }
+
+        // Add CSS animation for confetti
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fall {
+                to {
+                    transform: translateY(100vh) rotate(720deg);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Confetti on page load
+        window.addEventListener('load', () => {
+            for (let i = 0; i < 30; i++) {
+                setTimeout(createConfetti, i * 100);
+            }
+        });
+    </script>
+</body>
+</html>
